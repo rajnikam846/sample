@@ -4,7 +4,7 @@ pipeline{
         stage("TF Init"){
             steps{
                 echo "Executing Terraform Init"
-                sh "terraform init -reconfigure"
+                sh "terraform init"
             }
         }
         stage("TF Validate"){
@@ -15,6 +15,7 @@ pipeline{
         stage("TF Plan"){
             steps{
                 echo "Executing Terraform Plan"
+                sh "terraform plan"
             }
         }
         stage("TF Apply"){
