@@ -1,8 +1,7 @@
 terraform {
   backend "s3" {
-    bucket         = "1234jhooq-terraform-s3-buket"
+    bucket         = "sampesamsungjhooq-terraform-s3-buket1"
     key            = "terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform_table1"
   }
 }
